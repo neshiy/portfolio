@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				return;
 			}
 
-			const subject = encodeURIComponent(`Portfolio Inquiry from ${firstName} ${lastName}`);
+			const subject = `Portfolio Inquiry from ${firstName} ${lastName}`;
 			const emailBody = [
 				`Name: ${firstName} ${lastName}`,
 				`Email: ${email}`,
@@ -27,8 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
 				message,
 			].join("\n");
 
-			const mailtoLink = `mailto:dineshiperera05@gmail.com?subject=${subject}&body=${encodeURIComponent(emailBody)}`;
-			window.location.href = mailtoLink;
+			const gmailUrl = new URL("https://mail.google.com/mail/");
+			gmailUrl.searchParams.set("view", "cm");
+			gmailUrl.searchParams.set("fs", "1");
+			gmailUrl.searchParams.set("to", "dineshiperera05@gmail.com");
+			gmailUrl.searchParams.set("su", subject);
+			gmailUrl.searchParams.set("body", emailBody);
+			window.location.href = gmailUrl.toString();
 		});
 	}
 
