@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio - Christina Perera</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
+			<source src="pics/home_vid.mp4" type="video/mp4" />
+		</video>
+
+		<nav class="hero-nav">
+			<button class="hero-nav__burger" type="button" aria-label="Toggle navigation" aria-controls="hero-nav-menu" aria-expanded="false">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<div class="hero-nav__menu" id="hero-nav-menu">
+				<div class="hero-nav__links">
+					<a href="#section-1" class="hero-nav__link">Home</a>
+					<a href="#section-2" class="hero-nav__link">About Me</a>
+					<a href="#section-3" class="hero-nav__link">Projects</a>
+					<a href="#section-4" class="hero-nav__link">Resume</a>
+					<a href="#section-7" class="hero-nav__link">Contact</a>
+				</div>
+				<a href="tel:+94787932390" class="hero-nav__connect" aria-label="Call +94 78 793 2390">Connect</a>
+			</div>
+			<button class="hero-nav__theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+				<span class="hero-nav__theme-icon" aria-hidden="true">
+					<svg viewBox="0 0 24 24" role="presentation">
+						<circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+						<path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.07-7.07-1.42 1.42M8.35 17.66l-1.42 1.42m0-12.73L8.35 8.35m9.9 9.9-1.42-1.42" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</span>
+				<span class="hero-nav__theme-track" aria-hidden="true">
+					<span class="hero-nav__theme-thumb"></span>
+				</span>
+			</button>
+			<button class="hero-nav__profile-toggle" type="button" aria-label="Open profile card" aria-controls="profile-card" aria-expanded="false">Profile Card</button>
+		</nav>
+
+		<div class="profile-card-shell" id="profile-card" aria-hidden="false">
+			<article class="profile-card">
+				<h2 class="profile-card__name">Dineshi Christina Perera</h2>
+				<img class="profile-card__avatar" src="pics/stat pic.jpg" alt="Portrait of Dineshi Christina Perera" />
+				<div class="profile-card__block profile-card__specialty">
+					<p class="profile-card__tag">SPECIALIZING IN</p>
+					<p class="profile-card__roles">UI/ UX Designing & Software Engineering</p>
+				</div>
+				<div class="profile-card__block profile-card__location">
+					<span class="profile-card__label">BASED IN</span>
+					<p class="profile-card__value">Kurunegala, Sri Lanka</p>
+				</div>
+				<div class="profile-card__block profile-card__socials">
+					<a class="social-pill" href="mailto:dineshiperera05@gmail.com" aria-label="Email dineshiperera05@gmail.com" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" role="presentation">
+							<path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+							<path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+					<a class="social-pill" href="https://wa.me/94787932390" aria-label="Message on WhatsApp" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" role="presentation">
+							<path d="M12 3a8.5 8.5 0 0 0-7.29 12.91L4 21l5.27-1.66A8.5 8.5 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" />
+							<path d="M9.5 9.5c0 2 3 4.5 4.5 4.5l1.25-1.25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+						</svg>
+					</a>
+					<a class="social-pill" href="https://www.instagram.com/neshiizz/?next=%2F&hl=en" aria-label="Open Instagram profile" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" role="presentation">
+							<rect x="4" y="4" width="16" height="16" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+							<circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2" />
+							<circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+						</svg>
+					</a>
+					<a class="social-pill" href="https://github.com/neshiy" aria-label="Open GitHub profile" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" role="presentation">
+							<path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 4.77 5.07 5.07 0 0 0 17.91 1S16.73.65 15 2.08a13.38 13.38 0 0 0-6 0C7.27.65 6.09 1 6.09 1A5.07 5.07 0 0 0 6 4.77 5.44 5.44 0 0 0 4.5 8.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 10 17.13V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+					<a class="social-pill" href="https://www.linkedin.com/in/dineshi-christina-perera/" aria-label="Open LinkedIn profile" target="_blank" rel="noopener noreferrer">
+						<svg viewBox="0 0 24 24" role="presentation">
+							<path d="M6 9h3v9H6zM8.5 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" fill="currentColor" />
+							<path d="M13 9h3v1.8c.6-1.14 2.4-2.13 3.5-1.01V18h-3v-6c-1-1-3.5-.3-3.5 1.3V18H13z" fill="currentColor" />
+						</svg>
+					</a>
+				</div>
+				<a class="profile-card__cta" href="#section-7">Let's work together</a>
+			</article>
+		</div>
+
+		<main class="sections">
+			<section id="section-1" class="panel panel--hero bg-image1">
+				<div class="panel__overlay">
+					<div class="hero-layout">
+						<div class="profile-card-spacer"></div>
+
+						<div class="panel__content hero-copy">
+							<button class="home-chip" type="button">
+								<span class="home-chip__icon" aria-hidden="true">
+									<svg viewBox="0 0 24 24" role="presentation">
+										<path d="M3 10.5 12 3l9 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M6 10v10h5v-6h2v6h5V10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</span>
+								<span>Home</span>
+							</button>
+							<p class="hero-highlight">I'm Christina Perera <br> <br> Visual Designer & Software Engineer</p>
+							<div class="hero-actions">
+								<a class="hero-btn hero-btn--primary" href="#section-7">Contact Me</a>
+								<a class="hero-btn hero-btn--ghost" href="#section-3">Check Projects</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="section-2" class="panel panel--offset bg-image2">
+				<div class="panel__overlay">
+					<section class="about">
+						<button class="about__badge" type="button">
+							<span class="about__badge-icon" aria-hidden="true">
+								<svg viewBox="0 0 24 24" role="presentation">
+									<path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z" fill="none" stroke="currentColor" stroke-width="2" />
+									<path d="M4 20c0-3.31 3.13-6 7-6s7 2.69 7 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+								</svg>
+							</span>
+							<span>About Me</span>
+						</button>
+						<h2 class="about__topic">Building digital stories through design and <br> development.</h2>
+						<div class="about__grid">
+							<div class="about__description">
+								<p>Hello there! I’m a Software Engineer and Graphic Designer passionate about creating digital experiences that are both visually striking and technically seamless. I blend creative design thinking with clean, efficient code to build products that are intuitive, responsive, and user-centered.</p>
+								<p>From wireframes and prototypes to fully developed interactive websites and applications, I focus on designing and building with purpose and precision. My process is simple: understand the user, design intentionally, and implement thoughtfully. I’m always exploring new tools, frameworks, and design trends to enhance both the aesthetic and functionality of my work.</p>
+								<p>Beyond coding and design, I value clarity, problem-solving, and innovation. Whether it’s crafting a smooth user journey or developing scalable, high-performance interfaces, I’m committed to creating digital solutions that leave a lasting impact.</p>
+								<a class="about__cta" href="pics/new%20CV.pdf" download>
+									<span class="about__cta-icon" aria-hidden="true">
+										<svg viewBox="0 0 24 24" role="presentation">
+											<path d="M12 3v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+											<path d="m7 12 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											<path d="M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+										</svg>
+									</span>
+									<span>Download CV</span>
+								</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<section id="section-3" class="panel panel--offset bg-image1">
+				<div class="panel__overlay">
+					<section class="projects">
+						<div class="projects__heading">
+							<h2 class="projects__title">Top Projects</h2>
+							<div class="projects__controls">
+								<button class="projects__control projects__control--prev" type="button" aria-label="Previous project">
+									<svg viewBox="0 0 24 24" role="presentation">
+										<path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+								<button class="projects__control projects__control--next" type="button" aria-label="Next project">
+									<svg viewBox="0 0 24 24" role="presentation">
+										<path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="projects__grid">
+							<article class="project-card">
+								<header class="project-card__meta">
+									<span class="project-card__pill">Explore</span>
+									<span class="project-card__year">SE</span>
+								</header>
+								<h3 class="project-card__name">Software Engineering Projects</h3>
+								<p class="project-card__summary">Click here to check out the SE projects— Prototypes, and experiments from my software engineering work.</p>
+								<div class="project-card__tags">
+									<span>Software</span>
+									<span>Engineering</span>
+									<span>Code</span>
+								</div>
+								<a class="project-card__view" href="se-projects.html">Click here</a>
+							</article>
+							<article class="project-card">
+								<header class="project-card__meta">
+									<span class="project-card__pill">Explore</span>
+									<span class="project-card__year">Design</span>
+								</header>
+								<h3 class="project-card__name">Graphic Design Projects</h3>
+								<p class="project-card__summary">Click here to check out the Graphic Design Projects—brand work, visuals, and UI explorations.</p>
+								<div class="project-card__tags">
+									<span>Design</span>
+									<span>Visual</span>
+									<span>Graphics</span>
+								</div>
+								<a class="project-card__view" href="design-projects.html">Click here</a>
+							</article>
+						</div>
+						<section class="projects__more">
+							<h3 class="projects__subtitle">More Projects</h3>
+							<p class="projects__more-text">
+								Check out more of my projects here
+								<a class="projects__github" href="https://github.com/neshiy" target="_blank" rel="noopener noreferrer">
+									<span>GitHub</span>
+									<svg viewBox="0 0 24 24" role="presentation">
+										<path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 4.77 5.07 5.07 0 0 0 17.91 1S16.73.65 15 2.08a13.38 13.38 0 0 0-6 0C7.27.65 6.09 1 6.09 1A5.07 5.07 0 0 0 6 4.77 5.44 5.44 0 0 0 4.5 8.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 10 17.13V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</p>
+						</section>
+					</section>
+				</div>
+			</section>
+
+			<section id="section-4" class="panel panel--offset bg-image2">
+				<div class="panel__overlay">
+					<section class="resume">
+						<button class="resume__badge" type="button">
+							<span class="resume__badge-icon" aria-hidden="true">
+								<svg viewBox="0 0 24 24" role="presentation">
+									<path d="M6 3h9l3 3v15H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+									<path d="M15 3v4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+								</svg>
+							</span>
+							<span>Resume</span>
+						</button>
+						<div class="resume__controls">
+							<button class="projects__control resume__control resume__control--prev" type="button" aria-label="Previous resume card">
+								<svg viewBox="0 0 24 24" role="presentation">
+									<path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+							<button class="projects__control resume__control resume__control--next" type="button" aria-label="Next resume card">
+								<svg viewBox="0 0 24 24" role="presentation">
+									<path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+						<div class="resume__cards">
+							<article class="resume-card">
+								<h3 class="resume-card__title">Software Development</h3>
+								<p class="resume-card__description">I build responsive, user-friendly web applications using HTML, CSS, JavaScript, React, and modern frameworks. I focus on writing clean, efficient code to deliver seamless, interactive digital experiences that balance functionality with user-centric design.</p>
+							</article>
+							<article class="resume-card">
+								<h3 class="resume-card__title">Digital Designs</h3>
+								<p class="resume-card__description">I craft user-centered interfaces, wireframes, and interactive prototypes using Figma, Adobe XD, and design systems, with a strong emphasis on clarity, accessibility, and intuitive navigation. Additionally, I create digital illustrations, visual concepts, and creative artwork with Photoshop and Illustrator, transforming ideas into visually compelling designs that engage and inspire users.</p>
+							</article>
+						</div>
+						<div class="resume__dots" role="tablist" aria-label="Resume slides">
+							<button class="resume__dot" type="button" aria-label="Go to resume card 1" aria-selected="true">
+								<span class="resume__dot-label">1</span>
+							</button>
+							<button class="resume__dot" type="button" aria-label="Go to resume card 2" aria-selected="false">
+								<span class="resume__dot-label">2</span>
+							</button>
+							<button class="resume__dot" type="button" aria-label="Go to resume card 3" aria-selected="false">
+								<span class="resume__dot-label">3</span>
+							</button>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<section id="section-5" class="panel panel--offset bg-image2">
+				<div class="panel__overlay">
+					<section class="tools">
+						<h2 class="tools__heading">Tools I Work With</h2>
+						<div class="tools__grid">
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/html.jpg" alt="HTML logo" />
+								<span class="tool-card__label">HTML</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/css.jpg" alt="CSS logo" />
+								<span class="tool-card__label">CSS</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/js.jpg" alt="JavaScript logo" />
+								<span class="tool-card__label">JavaScript</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/react.jpg" alt="React logo" />
+								<span class="tool-card__label">React</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/nextjs.jpg" alt="Next.js logo" />
+								<span class="tool-card__label">Next.js</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/node.jpg" alt="Node.js logo" />
+								<span class="tool-card__label">Node.js</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/tailwind.jpg" alt="Tailwind CSS logo" />
+								<span class="tool-card__label">Tailwind CSS</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/bootstrap.jpg" alt="Bootstrap logo" />
+								<span class="tool-card__label">Bootstrap</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/powerbi.jpg" alt="Power BI logo" />
+								<span class="tool-card__label">Power BI</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/figma.jpg" alt="Figma logo" />
+								<span class="tool-card__label">Figma</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/canva.jpg" alt="Canva logo" />
+								<span class="tool-card__label">Canva</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/python.jpg" alt="Python logo" />
+								<span class="tool-card__label">Python</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/vs.jpg" alt="Vs logo" />
+								<span class="tool-card__label">VS code</span>
+							</article>
+							<article class="tool-card">
+								<img class="tool-card__icon" src="pics/github.jpg" alt="GitHub" />
+								<span class="tool-card__label">GitHub</span>
+							</article>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<section id="section-7" class="panel panel--offset bg-image1">
+				<div class="panel__overlay">
+					<section class="contact">
+						<h2 class="contact__heading">Contact Me</h2>
+						<div class="contact__card">
+							<form id="contact-form" class="contact__form">
+								<div class="contact__row">
+									<div class="contact__field">
+										<input class="contact__input" type="text" name="firstName" placeholder="First name" required>
+									</div>
+									<div class="contact__field">
+										<input class="contact__input" type="text" name="lastName" placeholder="Last name" required>
+									</div>
+								</div>
+								<div class="contact__row">
+									<div class="contact__field">
+										<input class="contact__input" type="email" name="email" placeholder="Email" required>
+									</div>
+									<div class="contact__field">
+										<input class="contact__input" type="tel" name="phone" placeholder="Phone" required>
+									</div>
+								</div>
+								<div class="contact__field">
+									<textarea class="contact__textarea" name="message" placeholder="Message" required></textarea>
+								</div>
+								<div class="contact__actions">
+									<button class="contact__submit" type="submit">Send Message</button>
+									<a class="contact__phone" href="tel:+94787932390">Call +94 78 793 2390</a>
+								</div>
+							</form>
+							<div class="contact__footer">
+								<a class="about__cta" href="pics/new%20CV.pdf" download>Download CV</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>

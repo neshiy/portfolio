@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SE Projects - Christina Perera</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="projects-page.css">
+	</head>
+	<body>
+		<video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
+			<source src="pics/home_vid.mp4" type="video/mp4" />
+		</video>
+
+		<header class="page-header">
+			<a href="index.html#section-3" class="back-btn">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<span>Back to Home</span>
+			</a>
+			<h1 class="page-title">Software Engineering Projects</h1>
+			<p class="page-subtitle">Builds, prototypes, and experiments from my software engineering work.</p>
+		</header>
+
+		<main class="projects-grid">
+			<article class="proj-card">
+				<div class="proj-card__img carousel" data-index="0">
+					<img src="proj_pics/pet1.png" alt="Pet Store Landing Page - Screenshot 1" class="carousel__slide active" />
+					<img src="proj_pics/pet2.png" alt="Pet Store Landing Page - Screenshot 2" class="carousel__slide" />
+					<button class="carousel__btn carousel__btn--prev" aria-label="Previous image">❮</button>
+					<button class="carousel__btn carousel__btn--next" aria-label="Next image">❯</button>
+					<div class="carousel__dots">
+						<span class="carousel__dot active"></span>
+						<span class="carousel__dot"></span>
+						<span class="carousel__dot"></span>
+					</div>
+				</div>
+				<div class="proj-card__body">
+					<h2 class="proj-card__name">Pet Store Landing Page</h2>
+					<p class="proj-card__desc">A modern, responsive landing page for a pet store built with Next.js and styled with Tailwind CSS.</p>
+					<div class="proj-card__stack">
+						<span>Next.js</span>
+						<span>Tailwind CSS</span>
+					</div>
+					<div class="proj-card__links">
+						<a href="https://idealypetstore.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-card__link proj-card__link--live">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							Live Demo
+						</a>
+						<a href="https://github.com/neshiy/idealypetstore" target="_blank" rel="noopener noreferrer" class="proj-card__link proj-card__link--gh">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 4.77 5.07 5.07 0 0 0 17.91 1S16.73.65 15 2.08a13.38 13.38 0 0 0-6 0C7.27.65 6.09 1 6.09 1A5.07 5.07 0 0 0 6 4.77 5.44 5.44 0 0 0 4.5 8.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 10 17.13V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							GitHub
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="proj-card">
+				<div class="proj-card__img carousel" data-index="0">
+					<img src="proj_pics/eco1.png" alt="Portfolio Website - Screenshot 1" class="carousel__slide active" />
+					<img src="proj_pics/eco2.png" alt="Portfolio Website - Screenshot 2" class="carousel__slide" />
+					<button class="carousel__btn carousel__btn--prev" aria-label="Previous image">❮</button>
+					<button class="carousel__btn carousel__btn--next" aria-label="Next image">❯</button>
+					<div class="carousel__dots">
+						<span class="carousel__dot active"></span>
+						<span class="carousel__dot"></span>
+					</div>
+				</div>
+				<div class="proj-card__body">
+					<h2 class="proj-card__name">ECOSELF - Dashboard</h2>
+					<p class="proj-card__desc">A Smart Light board Monitoring System. This shows data on devices installed and made with generated data.</p>
+					<div class="proj-card__stack">
+						<span>React.js</span>
+						<span>JavaScript</span>
+						<span>Tailwind</span>
+						<span>MongoDB</span>
+					</div>
+					<div class="proj-card__links">
+						<a href="ecoself-demo.html" class="proj-card__link proj-card__link--live">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							Live Demo
+						</a>
+						<a href="https://github.com/neshiy/Smart_Insf_Dashboard" target="_blank" rel="noopener noreferrer" class="proj-card__link proj-card__link--gh">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 4.77 5.07 5.07 0 0 0 17.91 1S16.73.65 15 2.08a13.38 13.38 0 0 0-6 0C7.27.65 6.09 1 6.09 1A5.07 5.07 0 0 0 6 4.77 5.44 5.44 0 0 0 4.5 8.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 10 17.13V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							GitHub
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<article class="proj-card">
+				<div class="proj-card__img carousel" data-index="0">
+					<img src="proj_pics/port1.png" alt="Portfolio Website #01 - Screenshot 1" class="carousel__slide active" />
+					<img src="proj_pics/port2.png" alt="Portfolio Website #01 - Screenshot 2" class="carousel__slide" />
+					<button class="carousel__btn carousel__btn--prev" aria-label="Previous image">❮</button>
+					<button class="carousel__btn carousel__btn--next" aria-label="Next image">❯</button>
+					<div class="carousel__dots">
+						<span class="carousel__dot active"></span>
+						<span class="carousel__dot"></span>
+					</div>
+				</div>
+				<div class="proj-card__body">
+					<h2 class="proj-card__name">Portfolio Website #01</h2>
+					<p class="proj-card__desc">My first portfolio website — some features have been removed.</p>
+					<div class="proj-card__stack">
+						<span>Next.js</span>
+						<span>Tailwind CSS</span>
+					</div>
+					<div class="proj-card__links">
+						<a href="https://portfolio02-one-beta.vercel.app/" target="_blank" rel="noopener noreferrer" class="proj-card__link proj-card__link--live">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							Live Demo
+						</a>
+						<a href="https://github.com/neshiy/portfolio02" target="_blank" rel="noopener noreferrer" class="proj-card__link proj-card__link--gh">
+							<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18 4.77 5.07 5.07 0 0 0 17.91 1S16.73.65 15 2.08a13.38 13.38 0 0 0-6 0C7.27.65 6.09 1 6.09 1A5.07 5.07 0 0 0 6 4.77 5.44 5.44 0 0 0 4.5 8.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 10 17.13V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							GitHub
+						</a>
+					</div>
+				</div>
+			</article>
+		</main>
+
+		<script>
+			document.querySelectorAll('.carousel').forEach(c => {
+				const slides = c.querySelectorAll('.carousel__slide');
+				const dots = c.querySelectorAll('.carousel__dot');
+				let idx = 0;
+				const show = i => {
+					slides.forEach((s, j) => { s.classList.toggle('active', j === i); });
+					dots.forEach((d, j) => { d.classList.toggle('active', j === i); });
+					idx = i;
+				};
+				c.querySelector('.carousel__btn--prev')?.addEventListener('click', () => show((idx - 1 + slides.length) % slides.length));
+				c.querySelector('.carousel__btn--next')?.addEventListener('click', () => show((idx + 1) % slides.length));
+				dots.forEach((d, j) => d.addEventListener('click', () => show(j)));
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Graphic Design Projects - Christina Perera</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="projects-page.css">
+	</head>
+	<body>
+		<video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
+			<source src="pics/home_vid.mp4" type="video/mp4" />
+		</video>
+
+		<header class="page-header">
+			<a href="index.html#section-3" class="back-btn">
+				<svg viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				<span>Back to Home</span>
+			</a>
+			<h1 class="page-title">Graphic Design Projects</h1>
+			<p class="page-subtitle">Brand work, visuals, and UI explorations.</p>
+		</header>
+
+		<!-- ===== Design Gallery ===== -->
+		<section class="gallery-section">
+			<h2 class="gallery-title">Project Gallery</h2>
+			<p class="gallery-subtitle">Click on any image to view it in full size.</p>
+			<div class="gallery-grid">
+				<div class="gallery-item" data-index="0"><img src="proj_pics/gdp1.png" alt="Design Project 1" /></div>
+				<div class="gallery-item" data-index="1"><img src="proj_pics/gdp2.png" alt="Design Project 2" /></div>
+				<div class="gallery-item" data-index="2"><img src="proj_pics/gdp3.png" alt="Design Project 3" /></div>
+				<div class="gallery-item" data-index="3"><img src="proj_pics/gdp4.png" alt="Design Project 4" /></div>
+				<div class="gallery-item" data-index="4"><img src="proj_pics/gdp5.png" alt="Design Project 5" /></div>
+				<div class="gallery-item" data-index="5"><img src="proj_pics/gdp6.png" alt="Design Project 6" /></div>
+			</div>
+		</section>
+
+		<!-- ===== Lightbox ===== -->
+		<div class="lightbox" id="lightbox">
+			<button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+			<button class="lightbox__arrow lightbox__arrow--left" id="lightboxPrev" aria-label="Previous">
+				<svg viewBox="0 0 24 24"><path d="M15 6 9 12l6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</button>
+			<img class="lightbox__img" id="lightboxImg" src="" alt="Gallery preview" />
+			<button class="lightbox__arrow lightbox__arrow--right" id="lightboxNext" aria-label="Next">
+				<svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</button>
+			<div class="lightbox__counter" id="lightboxCounter"></div>
+		</div>
+
+		<script>
+			(() => {
+				const images = [
+					'proj_pics/gdp1.png',
+					'proj_pics/gdp2.png',
+					'proj_pics/gdp3.png',
+					'proj_pics/gdp4.png',
+					'proj_pics/gdp5.png',
+					'proj_pics/gdp6.png'
+				];
+				let current = 0;
+
+				const lightbox    = document.getElementById('lightbox');
+				const lbImg       = document.getElementById('lightboxImg');
+				const lbCounter   = document.getElementById('lightboxCounter');
+				const btnClose    = document.getElementById('lightboxClose');
+				const btnPrev     = document.getElementById('lightboxPrev');
+				const btnNext     = document.getElementById('lightboxNext');
+
+				function open(index) {
+					current = index;
+					update();
+					lightbox.classList.add('active');
+					document.body.style.overflow = 'hidden';
+				}
+
+				function close() {
+					lightbox.classList.remove('active');
+					document.body.style.overflow = '';
+				}
+
+				function update() {
+					lbImg.src = images[current];
+					lbCounter.textContent = `${current + 1} / ${images.length}`;
+				}
+
+				function prev() {
+					current = (current - 1 + images.length) % images.length;
+					update();
+				}
+
+				function next() {
+					current = (current + 1) % images.length;
+					update();
+				}
+
+				// Gallery thumbnail clicks
+				document.querySelectorAll('.gallery-item').forEach(item => {
+					item.addEventListener('click', () => open(Number(item.dataset.index)));
+				});
+
+				btnClose.addEventListener('click', close);
+				btnPrev.addEventListener('click', prev);
+				btnNext.addEventListener('click', next);
+
+				// Close on backdrop click
+				lightbox.addEventListener('click', (e) => {
+					if (e.target === lightbox) close();
+				});
+
+				// Keyboard navigation
+				document.addEventListener('keydown', (e) => {
+					if (!lightbox.classList.contains('active')) return;
+					if (e.key === 'Escape')      close();
+					if (e.key === 'ArrowLeft')    prev();
+					if (e.key === 'ArrowRight')   next();
+				});
+			})();
+		</script>
+	</body>
+</html>
